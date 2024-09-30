@@ -3,7 +3,7 @@ import json
 import google.generativeai as genai
 from flask import Flask, request, jsonify, render_template
 
-API = "AIzaSyDn7KdpVMsgDkuNMZ3oW6tavZ3CGe1dpTY"
+API = //Put here your own personal API Key 
 genai.configure(api_key=API)
 model = genai.GenerativeModel('models/gemini-1.5-pro-latest')
 chat = model.start_chat(history=[])
